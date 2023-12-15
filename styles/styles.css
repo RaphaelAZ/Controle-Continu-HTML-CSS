@@ -1,48 +1,8 @@
+@import './header.css';
+@import './footer.css';
+@import './responsive.css';
 @import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Candal&family=Open+Sans:wght@300&display=swap');
-
-/* body,html {
-    width: 100%;
-} */
-
-* {
-    font-family: Open-sans;
-}
-
-a {
-    cursor: pointer;
-    text-decoration: none;
-    color: #656563;
-    text-align: center;
-    && i {
-        font-size: 1.8rem;
-        color: #FB8B9B;
-    }
-}
-
-a:hover {
-    color: #FB8B9B;
-    && i {
-        color: #656563;
-    }
-}
-
-header h1 {
-    font-family: Candal;
-    font-size: 3rem;
-    margin: 15px;
-}
-
-header h3 {
-    font-family: Candal;
-    font-size: 1rem;
-}
-
-header p {
-    font-family: Candal;
-    font-size: 2em;
-    text-align: center;
-}
 
 h4 {
     font-family: Candal;
@@ -59,10 +19,6 @@ main h3 {
     font-size: 1.2em;
 }
 
-footer h3 {
-    font-family: Candal;
-    font-size: 1em; 
-}
 
 .search-box {
     display: flex;
@@ -76,6 +32,8 @@ footer h3 {
         color: #FFFFFF;
         border: 0;
         width: 90%;
+        border: none;
+        outline: none;
     }
     && input::-webkit-input-placeholder{
         color: #FFFFFF;
@@ -103,8 +61,9 @@ footer h3 {
     flex-flow: column nowrap;
     height: 70vh;
     background-image: url('../img/background.jpg');
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     color: #FFFFFF;
     padding: 0 10% 0 10%;
 }
@@ -162,19 +121,6 @@ footer h3 {
     }
 }
 
-
-footer {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 20vh;
-    background-color: #213E4E;
-    && a {
-        color: #FFFFFF;
-    }
-}
-
 .cards {
     width: 100%;
     margin-top: 3em;
@@ -185,6 +131,7 @@ footer {
     text-align: center;
     && .card-base {
         border: 1px dashed #213E4E;
+        margin: 0em 2em 0em 2em;
         && h3 {
             font-size: 0.8em;
             background-color: #213E4E;
@@ -225,8 +172,17 @@ footer {
     }
 }
 
+.contact-cards {
+    width: 30%;
+    .contact-card-body {
+        width: 100%;
+        border: 1px dashed #213E4E;
+        border-width: 0px 0px 1px 0px;
+    }
+}
+
 .description {
-    margin: 0em 1em 0em 1em;
+    padding: 0em 1em 0em 1em;
     color: #213E4E;
 }
 
@@ -240,22 +196,19 @@ footer {
     }
 }
 
+.pink-font {
+    color: #FB8B9B;
+}
 
-@media screen and (max-width: 800px) {
-    .container {
-        flex-flow: column nowrap;
-        && img {
-            margin-bottom: 1em;
-        }
-    }
+.contact-type {
+    text-decoration: none;
+    border-bottom: dotted 1px #213E4E;
+}
 
-    .heberg-ad {
-        font-size: 1.2vh;
-        height: auto;
-    }
+.contact-address {
+    font-style: italic;
+}
 
-    footer {
-        height: auto;
-        flex-flow: column nowrap;
-    }
+.contact-margin {
+    margin-top: 1em;
 }

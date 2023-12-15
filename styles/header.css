@@ -1,0 +1,43 @@
+html {
+    width: 100vw !important;
+    overflow: hidden visible !important;
+}
+
+* {
+    font-family: 'Open sans';
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #656563;
+    text-align: center;
+    && i {
+        font-size: 1.8rem;
+        color: #FB8B9B;
+    }
+}
+
+a:hover {
+    color: #FB8B9B;
+    && i {
+        color: #656563;
+    }
+}
+
+header h1 {
+    font-family: Candal;
+    font-size: 3rem;
+    margin: 15px;
+}
+
+header h3 {
+    font-family: Candal;
+    font-size: 1rem;
+}
+
+header p {
+    font-family: Candal;
+    font-size: 2em;
+    text-align: center;
+}

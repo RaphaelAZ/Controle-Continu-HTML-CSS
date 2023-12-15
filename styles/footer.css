@@ -1,0 +1,16 @@
+footer h3 {
+    font-family: Candal;
+    font-size: 1em; 
+}
+
+footer {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 20vh;
+    background-color: #213E4E;
+    && a {
+        color: #FFFFFF;
+    }
+}

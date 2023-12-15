@@ -1,0 +1,66 @@
+@media screen and (max-width: 1300px) {
+    .card-base {
+        margin: 0em 1em 0em 1em !important;
+    }
+
+    ul .responsive-list {
+        padding: 0 !important;
+    }
+
+    .cards {
+        && .card-base {
+            && .card-body {
+                && li {
+                    margin: 0em 1em 0em 0em !important;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .container {
+        flex-flow: column nowrap !important;
+        && img {
+            margin-bottom: 1em !important;
+        }
+    }
+
+    header h1 {
+        text-align: center !important;
+        font-size: 3em !important;
+    }
+
+    .heberg-ad {
+        font-size: 1em !important;
+        && h1 {
+            font-size: 2em !important;
+        }
+        && p {
+            font-size: 1.4em !important;
+        }
+    }
+
+    .cards {
+        flex-flow: column nowrap !important;
+        align-items: center !important;
+        && .card-base {
+            margin-bottom: 2em !important;
+        }
+    }
+
+    .contact-cards {
+        width: 100% !important;
+        margin-top: 2em !important;
+    }
+
+    .main-container {
+        flex-flow: column nowrap !important;
+    }
+
+    footer {
+        height: auto;
+        flex-flow: column nowrap !important;
+    }
+}
