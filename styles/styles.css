@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Candal&family=Open+Sans:wght@300&display=swap');
 
-body {
-    width: auto;
-}
+/* body,html {
+    width: 100%;
+} */
 
 * {
     font-family: Open-sans;
@@ -35,7 +35,7 @@ header h1 {
 
 header h3 {
     font-family: Candal;
-    font-size: 1.6rem;
+    font-size: 1rem;
 }
 
 header p {
@@ -44,8 +44,13 @@ header p {
     text-align: center;
 }
 
+h4 {
+    font-family: Candal;
+}
+
 main h2 {
     font-family: Candal;
+    color: #213E4E;
     font-size: 1.8em;
 }
 
@@ -171,20 +176,70 @@ footer {
 }
 
 .cards {
+    width: 100%;
     margin-top: 3em;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: baseline;
+    text-align: center;
     && .card-base {
-        border: 2px dashed #213E4E;
-        && .card-button {
-            width: 100%;
-            color: #FFFFFF;
-            background-color: #FB8B9B;
+        border: 1px dashed #213E4E;
+        && h3 {
+            font-size: 0.8em;
+            background-color: #213E4E;
+            padding: 1em 2em 1em 2em;
+            margin: 1em 0.5em 0.5em 0.5em;
+            color: #FFFFFF !important;
+        }
+        && p {
+            text-align: center;
+        }
+        && .card-body {
+            && ul {
+                margin-top: 2em;
+            }
+            && li {
+                text-align: start;
+                color: #213E4E;
+                list-style-type:circle;
+                margin: 0em 4em 0em 2em;
+            }
+            && .card-button {
+                padding: 0.8em 2em 0.8em 2em;
+                margin: 1em 0.5em 0.5em 0.5em;
+                width: 90%;
+                color: #FFFFFF;
+                background-color: #FB8B9B;
+                cursor: pointer;
+                border: 0;
+                outline: none;
+            }
+            && .card-button:active {
+                background-color: #ff6d83;
+            }
+        }
+        && button::after {
+            background-color: #fa1b3c;
         }
     }
 }
+
+.description {
+    margin: 0em 1em 0em 1em;
+    color: #213E4E;
+}
+
+.map-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    && .contact-map {
+        width: 100%;
+        border: 1px solid #5A5B5D;
+    }
+}
+
 
 @media screen and (max-width: 800px) {
     .container {
